@@ -7,6 +7,7 @@
             @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
             body{
                 font-family: Roboto;
+                margin: 0;
             }
             .header{
                 margin-top:40px;
@@ -102,6 +103,16 @@
                 border-bottom-right-radius: 8px;
                 margin-left: -10px;
             }
+            .button-primary{
+                background-color: #025157;
+                color: #fff;
+                border: 1px solid #025157;
+                padding: 6px 20px;
+                border-bottom-left-radius: 8px;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+                border-bottom-right-radius: 8px;
+            }
             .form-text{
                 border: 1px solid #b6b6b6;
                 padding: 6px 20px;
@@ -139,8 +150,66 @@
                 left: 0;
                 right: 0;
                 background-color: #fffbf7;
+                z-index: 1000;
             }
- 
+            .sucess-stories{
+                background-color: #a1d683;
+            }
+            .features {
+                background-color: #025157;
+                padding: 5% 10%;
+                display: grid;
+                grid-template: repeat(2, 330px) / repeat(2, 1fr);
+            }
+            .features .feature-card{
+                margin: 0 15px 30px 15px;
+                background-color: #fff;
+                border: 1px solid #dadada;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                overflow: hidden;
+            }
+            .features .feature-card .feature-content{
+                padding: 20px 30px 40px 40px;
+                flex: 2;
+            }
+            .features .feature-card .feature-content > *{
+                margin-bottom: 1rem;
+                margin-top: 0;
+
+            }
+            .features .feature-card .feature-content img{
+                width: 50px;
+            }
+            .features .feature-card .feature-content h2{
+                font-size: 24px;
+                color: #343434;
+                font-weight: 400;
+            }
+            .features .feature-card .feature-content p{
+                font-size: 16px;
+                color: #7e7e7e;
+                font-weight: 400;
+            }
+            .features .feature-card .feature-content a{
+                font-size: 16px;
+                color: #67b54b;
+                font-weight: 600;
+                text-decoration: none;
+            }
+            .features .feature-card .feature-image{
+                flex: 1;
+                width: 40%;
+                position: relative;
+                right: -50px;
+                height: 80%;
+            }
+            .features .feature-card .feature-image figure, .features .feature-card .feature-image img {
+                margin-top: 0;
+                height: 100%;
+
+            }
         </style>
     </head>
     <body>
@@ -208,6 +277,84 @@
                 </form>
             </article>
         </section> 
+        <section class="features">
+            <article class="feature-card">
+                <div class="feature-content">
+                    <figure>
+                        <img src="images/Logo 1.png" alt="">
+                    </figure>
+                    <h3>Fill your blog with engaging articles.</h3>
+                    <p>Publish to your blog in less time than it takes to drink your morning coffee.</p>
+                    <a href="#">Publish instantly →</a>
+                </div>
+                <div class="feature-image">
+                    <figure>
+                        <img src="images/Cover.png" alt="">
+                    </figure>
+                </div>
+            </article>
+            <article class="feature-card">
+                <div class="feature-content">
+                    <figure>
+                        <img src="images/Logo 2.png" alt="">
+                    </figure>
+                    <h3>Attract and engage more website visitors.</h3>
+                    <p>Enhance your email, social media channels, and paid ads with content from Matcha.</p>
+                    <a href="#">Get more site traffic →</a>
+                </div>
+                <div class="feature-image">
+                    <figure>
+                        <img src="images/Cover2.png" alt="">
+                    </figure>
+                </div>
+            </article>
+            <article class="feature-card">
+                <div class="feature-content">
+                    <figure>
+                        <img src="images/Logo 5.png" alt="">
+                    </figure>
+                    <h3>Capture more emails with locked content.</h3>
+                    <p>Convert 10x more of your traffic into subscribers and nurture them to a sale.</p>
+                    <a href="#">Grow your email list faster →</a>
+                </div>
+                <div class="feature-image">
+                    <figure>
+                        <img src="images/Cover3.png" alt="">
+                    </figure>
+                </div>
+            </article>
+            <article class="feature-card">
+                <div class="feature-content">
+                    <figure>
+                        <img src="images/Logo 6.png" alt="">
+                    </figure>
+                    <h3>Optimize your blog’s performance.</h3>
+                    <p>See what content delivers the most traffic, engagement, email subscribers, and sales.</p>
+                    <a href="#">See content’s ROI →</a>
+                </div>
+                <div class="feature-image">
+                    <figure>
+                        <img src="images/Project Cover.png" alt="">
+                    </figure>
+                </div>
+            </article>
+        </section>
+        <section class="sucess-stories">
+            <article class="overview">
+                <h3>Growing ecommerce brands rely on Matcha.</h3>
+                <p>Are you tired of wasting time publishing blog articles 
+                to only see a trickle of traffic and no impact on sales? 
+                Join hundreds of business owners and ecommerce marketers who 
+                rely on Matcha for quality content and consistent performance from their blogs.
+                </p>
+                <button class="button-primary">Who Uses Matcha?</button>
+            </article>
+            <article class="stories-carousel">
+
+            </article>
+            
+
+        </section>
 
     </body>
 </html>
